@@ -1,4 +1,5 @@
-﻿using restaurant.Abstraction;
+﻿using Microsoft.Extensions.Logging;
+using restaurant.Abstraction;
 using restaurant.Metier;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,22 @@ builder.Services.ConfigureSwaggerGen(setup =>
 builder.Services.AddSingleton<MenuRepository, MenuLocalRepository>();
 
 var app = builder.Build();
+
+Console.WriteLine("Démarrage de l'API");
+
+IConfiguration configuration = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json")
+    .AddEnvironmentVariables()
+    .Build();
+
+var aspNetCoreUrls = configuration["ASPNETCORE_URLS"];
+var aspNetCoreHttpPorts = configuration["ASPNETCORE_HTTP_PORTS"];
+
+// Ajoutez ces valeurs aux logs
+Console.WriteLine($"ASPNETCORE_URLS: {aspNetCoreUrls}");
+Console.WriteLine($"ASPNETCORE_HTTP_PORTS: {aspNetCoreHttpPorts}");
+
 
 // Configure the HTTP request pipeline.
 app.UseSwagger();
