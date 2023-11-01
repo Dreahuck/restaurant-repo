@@ -3,6 +3,8 @@ WORKDIR /restaurant
 
 # Copy everything
 COPY . ./
+
+ASPNETCORE_URLS http://*:5000
 # Restore as distinct layers
 RUN dotnet restore
 # Build and publish a release
