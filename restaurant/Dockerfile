@@ -4,8 +4,6 @@ WORKDIR /restaurant
 # Copy everything
 COPY . ./
 
-ENV ASPNETCORE_URLS http://*:5000
-ENV ASPNETCORE_HTTP_PORTS 5000
 # Restore as distinct layers
 RUN dotnet restore
 # Build and publish a release
@@ -15,4 +13,4 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /restaurant
 COPY --from=build-env /restaurant/out .
-ENTRYPOINT ["dotnet", "restaurant.dll"]
+ENTRYPOINT ["dotnet", "restaurant.dll","--urls=http://+:5001"]
