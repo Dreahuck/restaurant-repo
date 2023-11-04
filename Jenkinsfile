@@ -29,7 +29,7 @@ fi
 
     stage('Create new container') {
       steps {
-        sh 'docker run -d --name core-restaurant restaurant-image:latest'
+        sh 'docker run -p 80:80 -d --name core-restaurant restaurant-image:latest'
       }
     }
 
