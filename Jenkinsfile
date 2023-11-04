@@ -17,10 +17,13 @@ pipeline {
       steps {
         sh '''existingContainerId=$(docker ps -aqf name=core-restaurant)
 
+echo $existingContainerId 
+
 if [ -n "$existingContainerId" ]; then
     docker stop $existingContainerId
     docker rm $existingContainerId
- '''
+fi
+'''
       }
     }
 
