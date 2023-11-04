@@ -9,7 +9,7 @@ pipeline {
 
     stage('Build docker ') {
       steps {
-        sh 'sudo docker build -t restaurant-image -f restaurant/Dockerfile .'
+        sh 'docker build -t restaurant-image -f restaurant/Dockerfile .'
       }
     }
 
@@ -26,7 +26,7 @@ if [ -n "$existingContainerId" ]; then
 
     stage('Create new container') {
       steps {
-        sh 'sudo docker run -d --name core-restaurant restaurant-image:latest'
+        sh 'docker run -d --name core-restaurant restaurant-image:latest'
       }
     }
 
