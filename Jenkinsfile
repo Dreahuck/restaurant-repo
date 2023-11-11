@@ -13,7 +13,7 @@ pipeline {
           steps {
             sh '''dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput="./CoverageResults/cobertura.xml"
 '''
-            archiveArtifacts './restaurant-test/CoverageResults/cobertura.xml'
+            archiveArtifacts 'restaurant-test/CoverageResults/cobertura.xml'
           }
         }
 
