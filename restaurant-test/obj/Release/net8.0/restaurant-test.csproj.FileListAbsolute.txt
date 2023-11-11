@@ -108,3 +108,5 @@
 /Users/mymac/Projects/restaurant/restaurant-test/obj/Release/net8.0/restaurant-test.pdb
 /Users/mymac/Projects/restaurant/restaurant-test/obj/Release/net8.0/restaurant-test.genruntimeconfig.cache
 /Users/mymac/Projects/restaurant/restaurant-test/obj/Release/net8.0/ref/restaurant-test.dll
+/Users/mymac/Projects/restaurant/restaurant-test/bin/Release/net8.0/Dockerfile
+/Users/mymac/Projects/restaurant/restaurant-test/obj/Release/net8.0/restaurant-test.sourcelink.json
