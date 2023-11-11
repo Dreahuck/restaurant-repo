@@ -2,8 +2,19 @@ pipeline {
   agent any
   stages {
     stage('Start deploy') {
-      steps {
-        echo 'Deploy start'
+      parallel {
+        stage('Start deploy') {
+          steps {
+            echo 'Deploy start'
+          }
+        }
+
+        stage('Unit test') {
+          steps {
+            sh 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./CoverageResults/cobertura.xml'
+          }
+        }
+
       }
     }
 
