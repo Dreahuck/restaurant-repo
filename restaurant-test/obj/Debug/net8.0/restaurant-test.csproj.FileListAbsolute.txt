@@ -108,3 +108,5 @@
 /Users/mymac/Projects/restaurant/restaurant-test/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/mymac/Projects/restaurant/restaurant-test/bin/Debug/net8.0/restaurant.dll
 /Users/mymac/Projects/restaurant/restaurant-test/bin/Debug/net8.0/restaurant.pdb
+/Users/mymac/Projects/restaurant/restaurant-test/bin/Debug/net8.0/Dockerfile
+/Users/mymac/Projects/restaurant/restaurant-test/obj/Debug/net8.0/restaurant-test.sourcelink.json
