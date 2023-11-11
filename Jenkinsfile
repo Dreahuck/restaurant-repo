@@ -11,9 +11,9 @@ pipeline {
 
         stage('Unit test') {
           steps {
-            sh '''dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput="${workspace}/CoverageResults/cobertura.xml"
+            sh '''dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput="./${workspace}/CoverageResults/cobertura.xml"
 '''
-            archiveArtifacts '${workspace}/CoverageResults/cobertura.xml'
+            archiveArtifacts './${workspace}/CoverageResults/cobertura.xml'
           }
         }
 
