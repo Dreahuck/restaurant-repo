@@ -42,7 +42,7 @@ fi
 
     stage('Create new container') {
       steps {
-        sh 'docker run -p 5001:5001 -d --name core-restaurant restaurant-image:latest'
+        sh 'docker run -p 8080:8080 -d --name core-restaurant restaurant-image:latest'
       }
     }
 
