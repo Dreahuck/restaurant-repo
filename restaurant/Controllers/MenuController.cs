@@ -10,7 +10,7 @@ using restaurant.Metier;
 
 namespace restaurant.Controllers
 {
-    [Route("/")]
+    [Route("/menu")]
     public class MenuController : Controller
     {
         private MenuRepository _service;
