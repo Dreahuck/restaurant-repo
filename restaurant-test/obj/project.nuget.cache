@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SRuuG6n3iE5Q2c+0m+EYV9z9duX4qHN0tGy/nb2lBFvWoTPOO2620/TY1B1y6Gr6GzZsbtJQUM4vYmGUSyNsmw==",
+  "dgSpecHash": "Jtq+1D3FzjHaTPDtZ91aZ2hvbNWYivR8FXbjo0bcOGHS7YGo+myiswUu1Pv+RFBlc1op2HsrUIW2B1uQ8D1lJA==",
   "success": true,
   "projectFilePath": "/Users/mymac/Projects/restaurant/restaurant-test/restaurant-test.csproj",
   "expectedPackageFiles": [
@@ -99,9 +99,7 @@
     "/Users/mymac/.nuget/packages/xunit.core/2.4.2/xunit.core.2.4.2.nupkg.sha512",
     "/Users/mymac/.nuget/packages/xunit.extensibility.core/2.4.2/xunit.extensibility.core.2.4.2.nupkg.sha512",
     "/Users/mymac/.nuget/packages/xunit.extensibility.execution/2.4.2/xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "/Users/mymac/.nuget/packages/xunit.runner.visualstudio/2.4.5/xunit.runner.visualstudio.2.4.5.nupkg.sha512",
-    "/Users/mymac/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.12/microsoft.aspnetcore.app.ref.7.0.12.nupkg.sha512",
-    "/Users/mymac/.nuget/packages/microsoft.netcore.app.ref/7.0.12/microsoft.netcore.app.ref.7.0.12.nupkg.sha512"
+    "/Users/mymac/.nuget/packages/xunit.runner.visualstudio/2.4.5/xunit.runner.visualstudio.2.4.5.nupkg.sha512"
   ],
   "logs": []
 }
