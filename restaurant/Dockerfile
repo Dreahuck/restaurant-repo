@@ -10,7 +10,7 @@ RUN dotnet restore
 RUN dotnet publish -c Release -o out
 
 # Build runtime image
-FROM mcr.microsoft.com/dotnet/sdk:7.0
+FROM mcr.microsoft.com/dotnet/aspnet:7.0
 WORKDIR /restaurant
 COPY --from=build-env /restaurant/out .
 ENTRYPOINT ["dotnet", "restaurant.dll","--urls=http://+:5001"]
